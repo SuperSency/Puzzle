@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cce8cf"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:id="@+id/tip">
+   <TextView
+       android:id="@+id/step"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:text="步数"
+       android:textSize="16dp"
+       android:layout_marginLeft="15dp"
+       android:gravity="center"
+       android:textColor="#757575"
+       android:background="@drawable/circle"/>
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="关卡"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#757575"
+        android:background="@drawable/circle"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="时间"
+        android:textSize="16dp"
+        android:textColor="#757575"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+
+        android:gravity="center"
+        android:background="@drawable/circle"/>
+</RelativeLayout>
+<!--游戏主界面-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridview"
+        android:layout_below="@+id/tip"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_marginTop="5dp"
+        ></GridLayout>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circle"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:text="选择图片"
+        android:textSize="15dp"
+        android:textColor="#212121"/>
+</RelativeLayout>
